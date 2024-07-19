@@ -96,7 +96,7 @@ function scorerPrompt(word, scoringAlgorithm = -1) {
 2 - Scrabble: Uses scrabble point system
 Enter 0, 1, or 2: `)
    }
-   return console.log(`algorithm name: ${scoringAlgorithms[scoringAlgorithm].name} \nscorerFunction result: ${scoringAlgorithms[scoringAlgorithm].scorerFunction(word)}`);
+   return console.log(`algorithm name: ${scoringAlgorithms[scoringAlgorithm].name} \nscore for ${word}: ${scoringAlgorithms[scoringAlgorithm].scorerFunction(word)}`);
 }
 
 function transform(oldPointStructure) {
@@ -117,7 +117,7 @@ function runProgram() {
 
    scorerPrompt(initialPrompt())
 
-console.log(newPointStructure)
+//console.log(newPointStructure)
 
 }
 
