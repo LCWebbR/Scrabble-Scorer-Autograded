@@ -109,7 +109,7 @@ function transform(oldPointStructure) {
 
       }
    }
-   newPointStructureObject[" "] = 0;
+   
    return newPointStructureObject;
 };
 
